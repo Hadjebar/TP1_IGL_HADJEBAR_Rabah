@@ -84,14 +84,6 @@ public class VecteurHelper {
     
     /**
      * Cette méthode permet d'inverser les éléments d'un vecteur
-     * <br>  
-     * <b> Exemple </b>
-     * <pre>
-     *   <code>
-     *      soit le vecteur : vec[5] = [12,3,5,4,1]
-     *      InverserVecteur(vecteur) nou     * <br>  
-     * <b> Exemple </b>
-     * <pre>
      *   <code>
      *      soit le vecteur : vec[5] = [12,3,5,4,1]
      *      TrierVecteur(vecteur) nous donne : vec[5]=[1,3,4,5,12]. 
