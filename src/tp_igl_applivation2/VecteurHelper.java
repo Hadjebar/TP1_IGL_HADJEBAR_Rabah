@@ -129,6 +129,11 @@ public class VecteurHelper {
         return min;
     }
     
+    /**
+     *  Cette méthode nous permet de multiplier tous 
+     *  les cases du vecteur par un entier
+     * @param n C'est l'entier 
+     */
     public void MultiplicationFonction(int n){
         for (int i = 0 ; i < vecteur.length ; i++){ 
             vecteur[i] = vecteur[i] * n ;
