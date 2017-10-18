@@ -24,7 +24,7 @@ public class VecteurHelper {
     
     /**
      * Constructeur du Vecteur
-     * @param vecteur Paramètre pour initiliser le vecteur cree 
+     * @param vecteur https://github.com/Hadjebar/TP1_IGL_HADJEBAR_Rabah.gitParamètre pour initiliser le vecteur cree 
      */
     public VecteurHelper(int[] vec ) throws ExceptionVecteurHelper{
         this.vecteur = vec; 
