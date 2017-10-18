@@ -28,6 +28,7 @@ public class VecteurHelper {
      */
     public VecteurHelper(int[] vec ) throws ExceptionVecteurHelper{
         this.vecteur = vec; 
+        MaxMinVecteur();
     }
  
     /**
@@ -37,10 +38,10 @@ public class VecteurHelper {
      * <br>  
      * <b> Exemple </b>
      * <pre>
-     *   <code>
+     * 
      *      soit le vecteur : vec[5] = [12,3,5,4,1]
      *      TrierVecteur(vecteur) nous donne : vec[5]=[1,3,4,5,12]. 
-     *   </code>
+     *   
      * </pre>
      */
     static public int[] TriertVecteur(int[] vecteur){
@@ -87,7 +88,7 @@ public class VecteurHelper {
      * @param vecteur le vecteur à inverser
      * @return le vecteur inversé
      */
-    static public int[] IverserVecteur(int[] vecteur){
+    static public int[] InverserVecteur(int[] vecteur){
         
         int[] vecInv = new int[vecteur.length];
         for(int i = 0 ; i < vecteur.length ; i++){
