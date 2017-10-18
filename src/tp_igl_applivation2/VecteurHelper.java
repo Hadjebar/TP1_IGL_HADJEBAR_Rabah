@@ -128,4 +128,10 @@ public class VecteurHelper {
     public int getMin(){
         return min;
     }
+    
+    public void MultiplicationFonction(int n){
+        for (int i = 0 ; i < vecteur.length ; i++){ 
+            vecteur[i] = vecteur[i] * n ;
+        }
+    }
 }
