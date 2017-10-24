@@ -25,8 +25,10 @@ public class VecteurHelperTest {
     @Test
     public void testTriertVecteur() {
         System.out.println("TriertVecteur");
-        int[] vecteur = {5,4,2,6};
+        int[] vecteur = {5,4,2};
         int[] result = VecteurHelper.TriertVecteur(vecteur);
+        int[] expResult = {2,4,5};
+        assertArrayEquals(expResult, result);
     }
 
     /**
@@ -38,7 +40,9 @@ public class VecteurHelperTest {
         //On prend deux vecteurs aleatoire
         int[] vec1 = {2,4,9};
         int[] vec2 = {6,8,7};
-        int[] result = VecteurHelper.SommeDeuxVecteurs(vec1, vec2);
+        int[] result = {8,12,16};
+        int[] somme = VecteurHelper.SommeDeuxVecteurs(vec1, vec2);
+        assertArrayEquals(result, somme);
     }
 
     /**
@@ -48,7 +52,9 @@ public class VecteurHelperTest {
     public void testInverserVecteur() {
         System.out.println("InverserVecteur");
         int[] vecteur = {6,9,7,2};
-        int[] result = VecteurHelper.InverserVecteur(vecteur);
+        int[] result = {2,7,9,6};
+        int[] inverse = VecteurHelper.InverserVecteur(vecteur);
+        assertArrayEquals(result, inverse); 
     }
 
     /**
@@ -57,8 +63,13 @@ public class VecteurHelperTest {
     @Test
     public void testMaxMinVecteur() throws Exception {
         System.out.println("MaxMinVecteur");
-        VecteurHelper instance = new VecteurHelper();
+        int[] tab = {4,5,6};
+        VecteurHelper instance = new VecteurHelper(tab);
         instance.MaxMinVecteur();
+        int max = 6 , min = 4 ;
+        assertEquals(max, instance.getMax());
+        assertEquals(min, instance.getMin()); 
+        
     }
 
     /**
@@ -95,8 +106,10 @@ public class VecteurHelperTest {
         System.out.println("MultiplicationFonction");
         int n = 2;
         int[] tab = {4,6,1};
+        int[] result = {8,12,2};
         VecteurHelper instance = new VecteurHelper(tab);
         instance.MultiplicationFonction(n);
+        assertArrayEquals(result, instance.getVecteur());
     }
     
 }
