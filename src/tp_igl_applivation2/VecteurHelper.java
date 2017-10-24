@@ -10,8 +10,8 @@ package tp_igl_applivation2;
  * @author Hadjebar Rabah
  */
 public class VecteurHelper {
-    int[] vecteur ;
-    int max , min ;
+    private int[] vecteur ;
+    private int max , min ;
     
     /**
      * Constructeur sans arguments initialise vecteur à null et max, min à 0  ;
@@ -128,6 +128,14 @@ public class VecteurHelper {
      */
     public int getMin(){
         return min;
+    }
+    
+    /**
+     * 
+     * @return le vecteur 
+     */
+    public int[] getVecteur(){
+        return vecteur ;
     }
     
     /**
