@@ -9,12 +9,11 @@ public class VecteurHelper {
     private int max , min ;
     
     /**
-     * Constructeur sans arguments initialise vecteur à null et max, min à 0  ;
+     * Constructeur sans arguments initialise vecteur à null et max, min à 0
      */
     public VecteurHelper(){
        vecteur = null ; 
-       max = 0 ; 
-       min = 0 ;
+       max = 0 ; min = 0 ;
     }
     
     /**
