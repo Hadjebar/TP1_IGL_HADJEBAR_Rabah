@@ -5,8 +5,8 @@ package tp_igl_applivation2;
  * @author Hadjebar Rabah
  */
 public class VecteurHelper {
-    private int[] vecteur ;
-    private int max , min ;
+    int[] vecteur ;
+    int max , min ;
     
     /**
      * Constructeur sans arguments initialise vecteur à null et max, min à 0
@@ -66,6 +66,7 @@ public class VecteurHelper {
         int[] vec = null;
         
         if(vec1.length == vec2.length ){
+            vec = new int[vec1.length];
             for(int i = 0 ; i < vec1.length ; i++){
                 vec[i] = vec1[i] + vec2[i];
             }
