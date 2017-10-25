@@ -66,7 +66,6 @@ public class VecteurHelper {
         int[] vec = null;
         
         if(vec1.length == vec2.length ){
-            vec = new int[vec1.length];
             for(int i = 0 ; i < vec1.length ; i++){
                 vec[i] = vec1[i] + vec2[i];
             }
