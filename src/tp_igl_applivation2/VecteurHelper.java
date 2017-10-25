@@ -1,25 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package tp_igl_applivation2;
 
 /**
- *
+ * La classe VecteurHelper contient un ensemble de méthode sur les vecteurs
  * @author Hadjebar Rabah
  */
 public class VecteurHelper {
-    private int[] vecteur ;
-    private int max , min ;
+    int[] vecteur ;
+    int max , min ;
     
     /**
-     * Constructeur sans arguments initialise vecteur à null et max, min à 0  ;
+     * Constructeur sans arguments initialise vecteur à null et max, min à 0
      */
     public VecteurHelper(){
        vecteur = null ; 
-       max = 0 ; 
-       min = 0 ;
+       max = 0 ; min = 0 ;
     }
     
     /**
